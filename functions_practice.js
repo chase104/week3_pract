@@ -39,22 +39,13 @@ if (groupOneIsGood) {
 
 
 const findLongestWord = (sentence) => {
-    // what if sentence is not a string OR is an empty string
     if (sentence == '' || typeof sentence !== "string") {
         return
     }
 
-    // return the longest word
-
-    // 1. split string into individual words
     let arrayOfStrings = sentence.split(' ');
-    // length is 5
-    console.log(arrayOfStrings);
-    // 2. loop through array and find the longest word
     let currentLongest = ''
-    // i      0 1 2 3 4 X
     for (let i=0; i<arrayOfStrings.length; i++) {
-        // is this word longer than the currentLongestWord
         if (arrayOfStrings[i].length > currentLongest.length) {
             currentLongest = arrayOfStrings[i]
         } 
@@ -62,4 +53,6 @@ const findLongestWord = (sentence) => {
     return currentLongest;
 }
 
-// findLongestWord()
+let longestWord = findLongestWord("What words are longest here?");
+
+console.log(longestWord);
