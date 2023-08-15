@@ -50,9 +50,9 @@ const findLongestWord = (sentence) => {
             currentLongest = arrayOfStrings[i]
         } 
     }
-    return currentLongest;
+    return currentLongest; //                     current longest = "longest"
 }
 
-let longestWord = findLongestWord("What words are longest here?");
+let longestWord = findLongestWord("What words are longest here in your bestest great opinion?");
 
 console.log(longestWord);
