@@ -17,7 +17,25 @@ let count1 = returnCount(answerOne, answerTwo, answerThree);
 let count2 = returnCount("hello", "im", "Chase");
 
 
-console.log(count1);
 
-console.log(count2);
+const isDivisible = (num) => {
+    // check if divisible by 3 & 5
+
+    if (num % 3 === 0 && num % 5 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+// let groupOneSize = 125;
+
+let groupOneIsGood = isDivisible(15);
+
+
+console.log(groupOneIsGood);
+
+if (groupOneIsGood) {
+
+}
 
