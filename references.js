@@ -66,3 +66,19 @@ console.log(arrayOfKeys);
 arrayOfKeys.forEach((key) => {
     console.log(myCar[key]); // now I can check if tese values are undefined
 })
+
+
+
+let myObject = {
+    name: "Thanos"
+}
+
+
+// myObject.name = "Thanos"
+
+// console.log(myObject);
+
+let objectCopy = {
+    ...myObject,
+    name: "Thanos"
+}
