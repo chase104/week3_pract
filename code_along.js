@@ -6,17 +6,33 @@ const readList = (array) => {
     array.forEach((item) => {
         console.log(item);
     })
-
-
 };
 const removeFromList = (array, itemToRemove) => {
+    // use information in these params to do something
+    // have some variable OUTSIDE the loop that can keep track of something
+    // loop through the array and use conditional to do something
     array.forEach((thing, index)=>{
         if (thing === itemToRemove) {
             // this is the thing we want to take out
             array.splice(index, 1)
         }
     })
+
 };
+
+// call function and give information
+removeFromList(shoppingList, "Bread");
+
+
+
+
+
+
+
+
+
+
+
 const addToList = (array, itemToAdd) => {
     // check if this thing is already in the array
     //  check if the item has the same data type as whatever is in the array.
